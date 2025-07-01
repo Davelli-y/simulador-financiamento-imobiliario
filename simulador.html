@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Simulador de Compra de Imóveis</h1>
+    <h2>Vamos fazer uma Simulação do valor da Entrada e das Parcelas Mensais da compra de um imóvel.</h2>
+    <p>Esses valores precisam ser corrigidos por inflação, devido ao contrato prever reajuste anual pelo IGPM ou por uma taxa de juros fixa definida no início do contrato.</p>
+
+    Insira a seguir:<br>
+    Valor do Imóvel:<br>
+    <input type="text" id="valorImovel"><br>
+    Percentual (%) da entrada (ex.: 5):<br>
+    <input type="text" id="pctEntrada"><br>
+    Duração do contrato (anos, ex.: 3):<br>
+    <input type="text" id="duracaoContrato"><br>
+    Taxa de juros anual de cenário alternativo (ex.: 8):<br>
+    <input type="text" id="jurosFixado"><br><br>
+    <input type="button" value="Simular" onclick="simulacao()">
+    
+    <hr>
+
+    <p>Podemos comparar os valores a serem poupados ao longo do tempo nas duas alternativas:</p>
+
+    <h3>Reajuste anual pelo IGPM (6%)</h3>
+    <div id="IGPM"></div>
+
+    <h3>Juros compostos anuais com taxa fixa (Entre 5% e 12%)</h3>
+    <div id="fixo"></div>
+
+    <h3>Resumo:</h3>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
