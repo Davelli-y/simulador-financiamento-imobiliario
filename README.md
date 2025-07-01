@@ -32,4 +32,7 @@ Este projeto calcula valores de entrada e simula parcelas mensais com duas opç�
   - IGPM: `parcela * (1 + 0.06)^(N-1)`
   - Juros: `parcela * (1 + juros/100)^(N-1)`
 
----
+📫 Fale comigo
+Guilherme Davelli
+🔗 LinkedIn.com/in/davelli-y
+📧 guilhermedavelli.y@gmail.com
